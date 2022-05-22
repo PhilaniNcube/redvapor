@@ -3,7 +3,7 @@ import { FaWhatsapp } from 'react-icons/fa'
 
 const Page = ({ children }) => {
   return (
-    <div className="relative flex min-h-screen flex-col items-center justify-center bg-slate-800/60">
+    <div className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-slate-800/60">
       <header className="w-full ">
         <nav className="mx-auto flex max-w-6xl items-center justify-between py-8">
           <span className="flex items-center">

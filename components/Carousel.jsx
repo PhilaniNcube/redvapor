@@ -7,6 +7,18 @@ import {
   ButtonNext,
 } from 'pure-react-carousel'
 import 'pure-react-carousel/dist/react-carousel.es.css'
+import { motion } from 'framer-motion'
+
+const children = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+
+    transition: {
+      duration: 0.8,
+    },
+  },
+}
 
 const Carousel = () => {
   return (
@@ -52,49 +64,64 @@ const Carousel = () => {
                   className="flex h-full items-center justify-start gap-14 transition duration-700 ease-out md:gap-6 lg:gap-8"
                 >
                   <Slide index={0}>
-                    <div className="relative flex w-full flex-shrink-0 sm:w-auto">
+                    <motion.div
+                      variants={children}
+                      className="relative flex w-full flex-shrink-0 sm:w-auto"
+                    >
                       <img
                         src="/images/shoot.jpg"
                         alt="Shoot"
                         className="h-full object-cover object-center"
                       />
-                    </div>
+                    </motion.div>
                   </Slide>
                   <Slide index={1}>
-                    <div className="relative flex w-full flex-shrink-0 sm:w-auto">
+                    <motion.div
+                      variants={children}
+                      className="relative flex w-full flex-shrink-0 sm:w-auto"
+                    >
                       <img
                         src="/images/shoot-2.jpg"
                         alt="Shoot"
                         className="w-full object-cover object-center"
                       />
-                    </div>
+                    </motion.div>
                   </Slide>
                   <Slide index={2}>
-                    <div className="relative flex w-full flex-shrink-0 sm:w-auto">
+                    <motion.div
+                      variants={children}
+                      className="relative flex w-full flex-shrink-0 sm:w-auto"
+                    >
                       <img
                         src="/images/shoot-3.jpg"
                         alt="Shoot"
                         className="w-full object-cover object-center"
                       />
-                    </div>
+                    </motion.div>
                   </Slide>
                   <Slide index={3}>
-                    <div className="relative flex w-full flex-shrink-0 sm:w-auto">
+                    <motion.div
+                      variants={children}
+                      className="relative flex w-full flex-shrink-0 sm:w-auto"
+                    >
                       <img
                         src="/images/shoot.jpg"
                         alt="Shoot"
                         className="w-full object-cover object-center"
                       />
-                    </div>
+                    </motion.div>
                   </Slide>
                   <Slide index={4}>
-                    <div className="relative flex h-full w-full flex-shrink-0 sm:w-auto">
+                    <motion.div
+                      variants={children}
+                      className="relative flex h-full w-full flex-shrink-0 sm:w-auto"
+                    >
                       <img
                         src="/images/shoot-5.jpg"
                         alt="Shoot"
                         className="w-full object-cover object-center"
                       />
-                    </div>
+                    </motion.div>
                   </Slide>
                 </div>
               </Slider>
@@ -159,7 +186,8 @@ const Carousel = () => {
             </ButtonBack>
             <div className="mx-auto h-full w-full overflow-x-hidden overflow-y-hidden">
               <Slider>
-                <div
+                <motion.div
+                  variants={children}
                   id="slider"
                   className="flex h-full items-center justify-start gap-14 transition duration-700 ease-out md:gap-6 lg:gap-8"
                 >
@@ -199,7 +227,7 @@ const Carousel = () => {
                       />
                     </div>
                   </Slide>
-                </div>
+                </motion.div>
               </Slider>
             </div>
             <ButtonNext
@@ -260,7 +288,10 @@ const Carousel = () => {
                 />
               </svg>
             </ButtonBack>
-            <div className="mx-auto h-full w-full overflow-x-hidden overflow-y-hidden">
+            <motion.div
+              variants={children}
+              className="mx-auto h-full w-full overflow-x-hidden overflow-y-hidden"
+            >
               <Slider>
                 <div
                   id="slider"
@@ -313,7 +344,7 @@ const Carousel = () => {
                   </Slide>
                 </div>
               </Slider>
-            </div>
+            </motion.div>
             <ButtonNext
               role="button"
               aria-label="slide forward"
