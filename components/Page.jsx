@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { FaWhatsapp } from 'react-icons/fa'
+import Link from 'next/link'
 
 const Page = ({ children }) => {
   return (
@@ -28,12 +29,16 @@ const Page = ({ children }) => {
 
           <img className="h-16 object-cover" src="/images/logo.svg" />
 
-          <div className="flex items-center space-x-3">
-            <FaWhatsapp className="rounded-full border border-white p-[3px] text-3xl text-white " />{' '}
-            <span className="rounded-full border border-white px-6 py-1 text-base text-white">
-              Get In Touch
-            </span>
-          </div>
+          <Link href="https://wa.me/27814296318" passHref>
+            <div className="flex cursor-pointer items-center space-x-3">
+              <Fragment>
+                <FaWhatsapp className="rounded-full border border-white p-[3px] text-3xl text-white " />{' '}
+                <span className="rounded-full border border-white px-6 py-1 text-base text-white">
+                  Get In Touch
+                </span>
+              </Fragment>
+            </div>
+          </Link>
         </nav>
       </header>
       <video
