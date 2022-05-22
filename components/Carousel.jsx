@@ -10,7 +10,7 @@ import 'pure-react-carousel/dist/react-carousel.es.css'
 
 const Carousel = () => {
   return (
-     <div className="container mx-auto">
+    <div className="container mx-auto">
       <div className="flex h-full w-full items-center justify-center py-24 px-4 sm:py-8">
         {/* Carousel for desktop and large size devices */}
         <CarouselProvider
@@ -96,7 +96,6 @@ const Carousel = () => {
                       />
                     </div>
                   </Slide>
-                 
                 </div>
               </Slider>
             </div>
@@ -200,9 +199,6 @@ const Carousel = () => {
                       />
                     </div>
                   </Slide>
-                
-                
-               
                 </div>
               </Slider>
             </div>
@@ -315,7 +311,6 @@ const Carousel = () => {
                       />
                     </div>
                   </Slide>
-                
                 </div>
               </Slider>
             </div>
