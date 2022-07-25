@@ -29,7 +29,7 @@ const About = () => {
           },
         },
       }}
-      className="mx-auto flex min-h-[83vh] max-w-6xl flex-col py-1 text-white"
+      className="mx-auto flex min-h-[83vh] max-w-6xl flex-col px-4 py-1 text-white lg:px-0"
     >
       <div className="my-6 w-full">
         <motion.div
@@ -39,17 +39,17 @@ const About = () => {
           <motion.img
             variants={children}
             src="/images/shoot-4.jpg"
-            className="col-span-2 h-full w-full object-cover"
+            className="col-span-6 lg:col-span-2 h-full w-full object-cover"
             alt="Red Vapor"
           />
 
-          <motion.div variants={children} className="col-span-4 w-full">
+          <motion.div variants={children} className="col-span-6 lg:col-span-4 w-full">
             <h1 className="w-full border-b border-white pb-2 text-3xl font-bold text-white">
               About Us
             </h1>
             <p className="pt-3 text-xs leading-6 text-white">
               Red Vapor was established in 2019. Ian Jonkers is the sole owner
-              of the company. Ian is a young passionate videographer and content
+              of the company. Ian is a young passionate filmmaker and content
               creator,he thrives on telling every day stories through film.The
               company is based in the second biggest city in the diverse Eastern
               Cape. Self taught filmmaker who struggled to get a bursary to go

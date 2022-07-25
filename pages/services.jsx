@@ -31,7 +31,7 @@ const Services = () => {
           },
         },
       }}
-      className="mx-auto flex min-h-[83vh] max-w-6xl flex-col  py-1 text-white"
+      className="mx-auto flex min-h-[83vh] max-w-6xl flex-col px-4 lg:px-0  py-1 text-white"
     >
       <div className="w-full border-b border-white pb-2">
         <h1 className="mt-4 text-2xl text-white">Our Services</h1>

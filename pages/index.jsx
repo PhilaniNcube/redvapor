@@ -30,7 +30,7 @@ const Home = () => {
           },
         },
       }}
-      className="mx-auto flex min-h-[83vh] max-w-6xl flex-col py-1 text-white"
+      className="mx-auto flex min-h-[83vh] max-w-6xl flex-col py-1 px-4 text-white lg:px-0"
     >
       <div className="w-full border-b border-white pb-2">
         <h1 className="mt-4 text-2xl text-white">Our Productions</h1>

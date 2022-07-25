@@ -35,7 +35,7 @@ const gallery = () => {
           },
         },
       }}
-      className="mx-auto flex min-h-[83vh] max-w-6xl flex-col py-1 text-white"
+      className="mx-auto flex min-h-[83vh] max-w-6xl px-4 lg:px-0 flex-col py-1 text-white"
     >
       <motion.div variants={children} className="my-6 w-full overflow-hidden">
         <motion.h1

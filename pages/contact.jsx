@@ -31,7 +31,7 @@ const Contact = () => {
           },
         },
       }}
-      className="my-4 mx-auto flex min-h-[75vh] w-full max-w-5xl flex-col py-1 text-white"
+      className="my-4 mx-auto flex min-h-[75vh] w-full max-w-5xl flex-col px-4 py-1 text-white lg:px-0"
     >
       <div className="grid w-[100%] grid-cols-1 gap-12 lg:grid-cols-2">
         <div className="w-[100%]">
