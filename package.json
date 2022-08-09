@@ -6,7 +6,9 @@
     "start": "next start"
   },
   "dependencies": {
+    "@analytics/google-tag-manager": "^0.5.2",
     "@heroicons/react": "^1.0.6",
+    "analytics": "^0.8.1",
     "framer-motion": "^6.3.3",
     "next": "latest",
     "pure-react-carousel": "^1.28.1",
