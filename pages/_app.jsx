@@ -1,10 +1,16 @@
 import '../styles/globals.css'
-import type { AppProps } from 'next/app'
-import { Fragment } from 'react';
+import { Fragment, useEffect } from 'react';
 import Page from '../components/Page';
+import analytics from '../utils/analytics';
 
 
-function MyApp({ Component, pageProps }: AppProps) {
+
+function MyApp({ Component, pageProps }) {
+
+useEffect(() => {
+  analytics.page()
+}, [])
+
   return (
     <Fragment>
       <Page>
@@ -13,9 +19,9 @@ function MyApp({ Component, pageProps }: AppProps) {
   </Fragment>
   )
 }
-   
-     
-      
-      
+
+
+
+
 
 export default MyApp
