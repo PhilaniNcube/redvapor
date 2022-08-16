@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Head from 'next/head'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
+import { useRouter } from 'next/router'
 
 const children = {
   hidden: { opacity: 0 },
@@ -9,6 +10,9 @@ const children = {
 }
 
 const Home = () => {
+
+ const router = useRouter()
+
   return (
     <motion.div
       initial="hidden"
@@ -38,6 +42,7 @@ const Home = () => {
       <div className="mx-auto my-6 grid w-10/12 grid-cols-1 gap-3 md:grid-cols-3 md:gap-6">
         <motion.div variants={children} className="w-full">
           <img
+            onClick={() => router.push('/swela')}
             src="/images/Swela.jpg"
             className="w-full object-cover"
             alt="Swela Poster"
@@ -45,6 +50,7 @@ const Home = () => {
         </motion.div>
         <motion.div variants={children} className="w-full">
           <img
+            onClick={() => router.push('/isambulo')}
             src="/images/Isambulo.jpg"
             className="w-full object-cover"
             alt="Isambulo Poster"
@@ -52,6 +58,7 @@ const Home = () => {
         </motion.div>
         <motion.div variants={children} className="w-full">
           <img
+            onClick={() => router.push('/rent')}
             src="/images/Rent.jpg"
             className="w-full object-cover"
             alt="Rent Poster"
